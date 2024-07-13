@@ -20,3 +20,21 @@ react, typescript를 활용한 웹 앱을 개발하기 위한 프로젝트 환�
    - index.html, index.jsx, App.jsx
 5. 빌드
    - [npm run build](./package.json)
+
+# 2. typescript 환경 설정 (babel)
+
+1. 필요한 패키지 설치
+   - `npm install -D typescript @babel/preset-typescript @types/react @types/react-dom`
+2. 설정 수정
+   1. [웹팩 설정](./webpack.config.js)
+      - entry file
+      - resolve.extensions
+      - babel-loader
+   2. [바벨 설정](./babel.config.json)
+      - preset-typescript
+3. 파일 확장자 및 코드 수정
+   - index.tsx, App.tsx
+
+babel + babel/preset-typescript으로 설정하면 컴파일 시 타입 검사를 하지 않는다. 그로인해 컴파일 속도가 빠르다는 장점과 실수(타입 오류를 잡지 못하고 컴파일)를 할 수 있다는 단점이 있다.
+
+- [예시](./src/App.tsx)

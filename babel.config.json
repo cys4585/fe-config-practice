@@ -1,4 +1,8 @@
 {
-  // react의 jsx 문법을 해석하기 위한 preset
-  "presets": ["@babel/preset-react"]
+  "presets": [
+    // react의 jsx 문법을 해석하기 위한 preset
+    "@babel/preset-react",
+    // typescript 해석을 위한 preset
+    "@babel/preset-typescript"
+  ]
 }
