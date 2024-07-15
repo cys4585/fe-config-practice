@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // (default: ES3)
+    "module": "ESNext", // 생성할 js 파일에서 사용할 모듈 시스템 지정 (ts가 모듈을 어떻게 변환할지를 결정)
+    "moduleResolution": "Bundler", // tsc가 모듈을 해석하는 방법을 결정 (tsc가 import/require문을 해석할 때 사용할 모듈 해석 전략을 정의)
+    "jsx": "react-jsx", // react의 jsx 문법 지원 ("@babel/preset-react"이 필요 없어짐) (default: "preserve")
+    "esModuleInterop": true, // CommonJS 모듈을 ES6 모듈처럼 import할 수 있게 한다. CommonJS로 작성된 React와의 호환성을 위해 필요하다. (default: false)
+    "strict": true, // typescript의 엄격 모드를 활성화하여 타입 검사를 엄격하게 한다. (default: false)
+    "allowJs": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
